@@ -7,7 +7,7 @@ export interface JWTUser {
 }
 
 class JWTServices {
-  public static generateTokenForUser(user: User) {
+  public static generateTokenForUser(user: any) {
     // generate payload
     const payload: JWTUser = {
       id: user?.id,
